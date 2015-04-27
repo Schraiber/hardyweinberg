@@ -6,4 +6,4 @@ This set of R functions will perform maximum likelihood estimation of inbreeding
 
 ## Installation
 
-Calling `source("HWtest.r")' to load the scripts. The only required package is `EMT'
+Calling `source("HWtest.r")` to load the scripts. The only required package is `EMT`
