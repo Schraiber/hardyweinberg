@@ -22,3 +22,7 @@ Data is required to be in a format similar, but not identical to, a VCF file. Th
   1 721119  1  1  0  0  0  1  0   0   0   0   0
 
 ```
+
+## Batch inbreeding coefficient
+
+To compute the liklelihood of the data assuming  a single inbreeding coefficient for all individuals in the dataset, use the function `LL\_combined`.
