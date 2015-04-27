@@ -50,3 +50,18 @@ under an assumption of Beta-distributed F among individuals. The input is a vect
 of two parameters, corresponding to the alpha and beta parameters of the Beta distribution.
 
 ## Inbreeding coefficients per individual and per chromosome
+
+To use composite likelihood to estimate an F per each individual and each chromosome, 
+use the function `F_per_chrom`. The output is a matrix giving an estimate of F for each
+chromosome (columns) of each individual (rows). 
+
+It may be desirable to obtain block jackknife confidence intervals for these estimates.
+This can be done using the functions `jackkife_F` (which expects a VCF file with only
+a SINGLE chromosome) or `jackknife_F_genome` (which will perform the operation 
+genome-wide). Note that these require as input the size of the block to remove, in 
+base pairs. These functions can take quite a long time to run.
+
+## Citation
+If you use this code, please cite this paper:
+Schraiber, Joshua G., Stephannie Shih, and Montgomery Slatkin. "Genomic tests of variation
+in inbreeding among individuals and among chromosomes." Genetics 192.4 (2012): 1477-1482.
